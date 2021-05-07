@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: denso_arm_with_extruder
+    relative_path: urdf/denso_vs050_with_extruder.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/myrobot.srdf
+  CONFIG:
+    author_name: Xue Ye Lin
+    author_email: xueye.lin.2@gmail.com
+    generated_timestamp: 1619993040

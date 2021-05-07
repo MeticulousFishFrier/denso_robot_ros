@@ -1,0 +1,6 @@
+<launch>
+  <arg name="gcode_file" /> 
+  <node name="denso_robot_print" pkg="denso_robot_3dp" type="denso_robot_print.py" args="$(arg gcode_file)" output="screen"></node>
+  <node name="slicer_frame_tf_broadcaster" pkg="denso_robot_3dp" type="slicer_frame_tf_broadcaster.py" output="screen"></node>
+
+</launch>
