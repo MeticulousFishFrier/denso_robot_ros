@@ -1,0 +1,9 @@
+<robot name="myrobot" xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- myrobot urdf file -->
+<xacro:include filename="$(find denso_robot_descriptions)/vs050_description/vs050.urdf"/>
+<!-- add any joints/links required to connect the two -->
+
+<xacro:include filename="$(find denso_arm_with_extruder)/urdf/extruder.xacro" />
+<xacro:extruder prefix="" connected_to="J6"/>
+</robot>
